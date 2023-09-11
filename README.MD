@@ -3,9 +3,7 @@
 
 | Technologies                                                  |         | 
 | ------------------------------------------------------------- |-------- |
-| ![Technologies Used](https://skillicons.dev/icons?i=express)  | Express | 
-| ![Technologies Used](https://skillicons.dev/icons?i=mongo)    | MongoDB | 
-| ![Technologies Used](https://skillicons.dev/icons?i=nodejs)   | NodeJS  |
+| TBD
  
 
 
