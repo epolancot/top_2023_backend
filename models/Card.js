@@ -6,6 +6,9 @@ const cardSchema = new Schema(
             type: String,
             required: true
         },
+        creditGroup: {
+            type: String
+        },
         apr: {
             type: Number
         },
