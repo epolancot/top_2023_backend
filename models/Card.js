@@ -21,7 +21,7 @@ const cardSchema = new Schema(
         rewards: {
             type: String
         },
-        anualFee: {
+        annualFee: {
             type: Number
         },
         cardDetails: [{
