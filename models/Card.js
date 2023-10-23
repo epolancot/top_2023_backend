@@ -1,4 +1,5 @@
-const { Schema } = require('mongoose')
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const cardSchema = new Schema(
     {
@@ -10,7 +11,11 @@ const cardSchema = new Schema(
             type: String
         },
         apr: {
-            type: Number
+            type: {
+                "Poor-Fair": Number,
+                "Good": Number,
+                "Great": Number,
+            }
         },
         gracePeriod: {
             type: Number
@@ -20,15 +25,9 @@ const cardSchema = new Schema(
         },
         rewards: {
             type: String
-        },
-        annualFee: {
-            type: Number
-        },
-        cardDetails: [{
-            type: String
-    }]
-        
+        },        
     },
     { timestamps: true }
 )
-module.exports = cardSchema
+
+module.exports = mongoose.model('Card', cardSchema);
